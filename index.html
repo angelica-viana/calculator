@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Calculadora M²</title>
+</head>
+<body>
+    <main id="container">
+
+        <div class="container-left">
+            <h1 class="title">Calculadora M²</h1>
+            <p class="subtitle">Esta calculadora tem como objetivo auxiliar nos cálculos básicos de área de cobertura
+            para diversos revestimentos para pisos ou paredes, tendo como resultado a quantidade necessária em metros
+            quadrados para cobrir a área desejada.
+             </p>
+            <p class="text">
+            Por segurança, sugerimos um acréscimo de 7% sobre a quantidade de revestimento encontrada para ajustes,
+            acabamentos e recortes em obra.
+             </p>
+        </div>
+
+        <div class="container-right-one">
+            <img src="./assets/icon.png" alt="imagem" class="icon">
+            <h2 class="text-instruction">
+                Insira as dimenções em metros:
+            </h2>
+            <label for="width-height" class="altura">Altura/Largura</label>
+            <input type="number" value placeholder="Ex.: 18" maxlength="50" id="width-height" />
+            <label for="length" class="comprimento">Comprimento</label>
+            <input type="number" value placeholder="Ex.: 18" maxlength="50" id="length" />
+            <div class="buttons">
+                <button class="bt-submit" id="submit">Calcular</button>
+                <button class="bt-limpar" id="clear" onclick="clean()">Limpar</button>
+            </div>
+        </div> 
+
+        <div class="container-right-two">
+            <h4 class="text-calc">
+                Calcule a quantidade em metros quadrados de revestimento para seu projeto.
+            </h4>
+            <label for="total" class="name-total">Total m²</label>
+            <div class="total" id="total"> </div>
+            <label for="suggested-total" class="name-suggested-total">Total Sugerido m²</label>
+            <div class="suggested-total" id="sugestao-total"> </div>
+            <button id="bt-somar">Somar aos Valores</button>
+            
+            <div class="results-text">
+                <label for="soma-valores" class="name-total-somado">Total somado em m²</label>
+                <label for="valores-sugeridos" class="name-total-sugerido">Total sugerido em m²</label>
+            </div> 
+            <div class="results-value">   
+                <div  id="soma-valores"> </div>
+                <div  id="valores-sugeridos"> </div>          
+            </div>        
+        </div> 
+
+    </main>
+    
+    <footer>
+        <span>
+            Todos os direitos reservados © <br><br>
+            Desenvolvido por: Angélica Viana
+        </span>
+    </footer>
+
+   <script src="./script.js"></script>
+</body>
+</html>
